@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results total="5" passed="5" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-10-05T08:45:06Z" name="MyArtifactSuite" finished-at="2020-10-05T08:45:22Z" duration-ms="16738">
+    <groups>
+    </groups>
+    <test started-at="2020-10-05T08:45:06Z" name="AllSuites" finished-at="2020-10-05T08:45:22Z" duration-ms="16738">
+      <class name="test.TestShopping">
+        <test-method is-config="true" signature="setup()[pri:0, instance:test.TestShopping@6b81ce95]" started-at="2020-10-05T10:45:06Z" name="setup" finished-at="2020-10-05T10:45:12Z" duration-ms="6508" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Login()[pri:0, instance:test.TestShopping@6b81ce95]" started-at="2020-10-05T10:45:12Z" name="Login" description="Adding login details" finished-at="2020-10-05T10:45:15Z" duration-ms="2805" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method signature="addproducts()[pri:1, instance:test.TestShopping@6b81ce95]" started-at="2020-10-05T10:45:15Z" name="addproducts" description="Adding product into cart" finished-at="2020-10-05T10:45:18Z" duration-ms="3219" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addproducts -->
+        <test-method signature="addinfo()[pri:2, instance:test.TestShopping@6b81ce95]" started-at="2020-10-05T10:45:18Z" name="addinfo" description="Adding personal information" finished-at="2020-10-05T10:45:21Z" duration-ms="2898" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addinfo -->
+        <test-method signature="verifytotal()[pri:3, instance:test.TestShopping@6b81ce95]" started-at="2020-10-05T10:45:21Z" name="verifytotal" description="Verifying total in cart" finished-at="2020-10-05T10:45:21Z" duration-ms="81" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifytotal -->
+        <test-method signature="finishorder()[pri:4, instance:test.TestShopping@6b81ce95]" started-at="2020-10-05T10:45:21Z" name="finishorder" description="Confirming the order" finished-at="2020-10-05T10:45:22Z" duration-ms="1220" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finishorder -->
+      </class> <!-- test.TestShopping -->
+    </test> <!-- AllSuites -->
+  </suite> <!-- MyArtifactSuite -->
+</testng-results>
