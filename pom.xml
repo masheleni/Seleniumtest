@@ -21,6 +21,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <testng.selenium.endpoint>https://google.com</testng.selenium.endpoint>
+	<selenium-hub.host>localhost</selenium-hub.host>
   </properties>
 
   <dependencies>
@@ -136,7 +137,7 @@
       </plugin>
     </plugins>
   </build>
-  <properties>
-<selenium-hub.host>localhost</selenium-hub.host>
-</properties>
+
+
+
 </project>
