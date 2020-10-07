@@ -6,17 +6,4 @@
       <class name="test.TestShopping"/>
     </classes>
   </test> <!-- AllSuites -->
-  <test name="AllSuites(failed)">
-    <classes>
-      <class name="test.TestShopping">
-        <methods>
-          <include name="addproducts"/>
-          <include name="verifytotal"/>
-          <include name="addinfo"/>
-          <include name="finishorder"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- test.TestShopping -->
-    </classes>
-  </test> <!-- AllSuites(failed) -->
 </suite> <!-- Failed suite [MyArtifactSuite] -->
