@@ -1,9 +1,14 @@
 package test;
 
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -15,15 +20,29 @@ import main.VerifyShoppingCart;
 
 public class TestShopping {
 
-	static WebDriver driver;
+	static RemoteWebDriver driver;
 	
+//static RemoteWebDriver remotedriver ;
 
+	
+	
+	
 	@BeforeTest
-	public void setup() 
+	public void setup() throws Exception 
 
 	{
-		System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
-		driver = new ChromeDriver();
+		//System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
+		
+		ChromeOptions options = new ChromeOptions();
+		options.addArguments("--headless");
+		DesiredCapabilities capabilities = new DesiredCapabilities();
+		capabilities.setCapability(ChromeOptions.CAPABILITY, options);
+		options.merge(capabilities);
+		
+		driver = new RemoteWebDriver(new URL("http://hub:4444/wd/hub"),capabilities);
+	
+		
+	//	driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 		driver.get("https://www.saucedemo.com/");
 		driver.manage().window().maximize();
