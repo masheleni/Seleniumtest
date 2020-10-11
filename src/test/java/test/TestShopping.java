@@ -7,8 +7,10 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.devtools.page.Page;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -19,19 +21,14 @@ import main.Login;
 import main.VerifyShoppingCart;
 
 public class TestShopping {
+	
+	WebDriver driver;
 
-	static RemoteWebDriver driver;
-	
-//static RemoteWebDriver remotedriver ;
-
-	
-	
-	
 	@BeforeTest
 	public void setup() throws Exception 
 
 	{
-		//System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
 		
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("--headless");
@@ -41,43 +38,39 @@ public class TestShopping {
 		
 		driver = new RemoteWebDriver(new URL("http://hub:4444/wd/hub"),capabilities);
 	
+	
 		
-	//	driver = new ChromeDriver();
-		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-		driver.get("https://www.saucedemo.com/");
-		driver.manage().window().maximize();
-
-	}
-
-	public void main(String[] args) throws Exception {
+   //driver = new ChromeDriver();
+   //driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+   driver.get("https://www.saucedemo.com/");
+   driver.manage().window().maximize();
+   Thread.sleep(2000);
+   
+   
 
 	}
 
 	@Test(priority=0, description = "Adding login details")
-
-	public void Login() throws Exception
+	
+	public void Login () throws Exception
 
 	{
-		Thread.sleep(500);
-
-		Login Login = new Login(driver);
-		Login.typeusername();
-		Login.typepassword();
-		Login.Clickonlogin();
-
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		Login login = PageFactory.initElements(driver,Login.class);
+		Thread.sleep(2000);
+		login.Loginintoswaglabs("uid", "pass");
+	
+	
 	}
-
+	
 	@Test(priority=1, description = "Adding product into cart")
 
 	public void addproducts() throws Exception
 
 	{
+		AddProducts addproducts = PageFactory.initElements(driver, AddProducts.class);
+		addproducts.addingproducts("fp", "sp", "cp");
 
-		AddProducts AddProducts = new AddProducts(driver);
-
-		AddProducts.Addfirstproduct();
-		AddProducts.Addsecondproduct();
-		AddProducts.Confirmproduct();
 	
 		boolean ActualTitle = driver.getPageSource().contains("Sauce Labs Backpack");		
 		Assert.assertTrue(ActualTitle, "Expected product not found");
@@ -94,26 +87,19 @@ public class TestShopping {
 	public void addinfo() throws Exception
 
 	{
+		AddInfo adding = PageFactory.initElements(driver, AddInfo.class);
+	adding.addinginfo("uname", "pwd", "code1");
 
-		AddInfo addinfo = new AddInfo(driver);
-
-		addinfo.checkout();
-		addinfo.firstname();
-		addinfo.lastname();
-		addinfo.postlacode();
-		addinfo.Continue();
-
+	
 	}
 	
-	
-
 	@Test(priority = 3, description = "Verifying total in cart")
 
-	public void verifytotal() {
+	public void verifytotal() throws Exception {
 		VerifyShoppingCart total = new VerifyShoppingCart(driver);
 		total.verifycart();
+
 	}
-	
 	
 
 	@Test(priority = 4, description = "Confirming the order")
