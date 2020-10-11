@@ -22,26 +22,22 @@ import main.VerifyShoppingCart;
 
 public class TestShopping {
 	
-	WebDriver driver;
+	RemoteWebDriver driver;
+	
+	
 
 	@BeforeTest
 	public void setup() throws Exception 
 	{
 	
 		System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
-		DesiredCapabilities capabilities = new DesiredCapabilities();
+	DesiredCapabilities capabilities = new DesiredCapabilities();
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("--headless");	
 		capabilities.setCapability(ChromeOptions.CAPABILITY, options);
 		options.merge(capabilities);
-		driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"),capabilities);
-		
-
-		
-	
-	
-		
-  driver = new ChromeDriver();
+		driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"),capabilities); 
+		// driver = new ChromeDriver();
    driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
    driver.get("https://www.saucedemo.com/");
    driver.manage().window().maximize();

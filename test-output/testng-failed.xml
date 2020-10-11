@@ -6,4 +6,17 @@
       <class name="test.TestShopping"/>
     </classes>
   </test> <!-- Default test -->
+  <test parallel="none" name="Default test(failed)">
+    <classes>
+      <class name="test.TestShopping">
+        <methods>
+          <include name="addproducts"/>
+          <include name="verifytotal"/>
+          <include name="addinfo"/>
+          <include name="finishorder"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- test.TestShopping -->
+    </classes>
+  </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
