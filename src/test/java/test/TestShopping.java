@@ -29,8 +29,9 @@ public class TestShopping {
 
 	{
 		
+
 		
-		
+	
 		System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
 		DesiredCapabilities capabilities = new DesiredCapabilities();
 		
@@ -44,8 +45,6 @@ public class TestShopping {
 		
 
 		
-		
-		driver = new RemoteWebDriver(new URL("http://hub:4444/wd/hub"),capabilities);
 	
 	
 		
