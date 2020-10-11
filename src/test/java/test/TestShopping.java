@@ -30,18 +30,18 @@ public class TestShopping {
 	{
 		System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
 		
-		ChromeOptions options = new ChromeOptions();
+		/*ChromeOptions options = new ChromeOptions();
 		options.addArguments("--headless");
 		DesiredCapabilities capabilities = new DesiredCapabilities();
 		capabilities.setCapability(ChromeOptions.CAPABILITY, options);
 		options.merge(capabilities);
 		
-		driver = new RemoteWebDriver(new URL("http://hub:4444/wd/hub"),capabilities);
+		driver = new RemoteWebDriver(new URL("http://hub:4444/wd/hub"),capabilities);*/
 	
 	
 		
-   //driver = new ChromeDriver();
-   //driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+   driver = new ChromeDriver();
+   driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
    driver.get("https://www.saucedemo.com/");
    driver.manage().window().maximize();
    Thread.sleep(2000);

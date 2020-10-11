@@ -2,32 +2,32 @@
 <testng-results total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-10-07T12:17:21Z" name="Default suite" finished-at="2020-10-07T12:17:41Z" duration-ms="19999">
+  <suite started-at="2020-10-11T20:40:42Z" name="Default suite" finished-at="2020-10-11T20:41:11Z" duration-ms="29357">
     <groups>
     </groups>
-    <test started-at="2020-10-07T12:17:21Z" name="Default test" finished-at="2020-10-07T12:17:41Z" duration-ms="19999">
+    <test started-at="2020-10-11T20:40:42Z" name="Default test" finished-at="2020-10-11T20:41:11Z" duration-ms="29357">
       <class name="test.TestShopping">
-        <test-method is-config="true" signature="setup()[pri:0, instance:test.TestShopping@3fc79729]" started-at="2020-10-07T14:17:21Z" name="setup" finished-at="2020-10-07T14:17:28Z" duration-ms="7188" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:test.TestShopping@59d4cd39]" started-at="2020-10-11T22:40:42Z" name="setup" finished-at="2020-10-11T22:40:51Z" duration-ms="9661" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="Login()[pri:0, instance:test.TestShopping@3fc79729]" started-at="2020-10-07T14:17:28Z" name="Login" description="Adding login details" finished-at="2020-10-07T14:17:32Z" duration-ms="3694" status="PASS">
+        <test-method signature="Login()[pri:0, instance:test.TestShopping@59d4cd39]" started-at="2020-10-11T22:40:51Z" name="Login" description="Adding login details" finished-at="2020-10-11T22:40:56Z" duration-ms="4766" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method signature="addproducts()[pri:1, instance:test.TestShopping@3fc79729]" started-at="2020-10-07T14:17:32Z" name="addproducts" description="Adding product into cart" finished-at="2020-10-07T14:17:36Z" duration-ms="3584" status="PASS">
+        <test-method signature="addproducts()[pri:1, instance:test.TestShopping@59d4cd39]" started-at="2020-10-11T22:40:56Z" name="addproducts" description="Adding product into cart" finished-at="2020-10-11T22:41:03Z" duration-ms="6590" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addproducts -->
-        <test-method signature="addinfo()[pri:2, instance:test.TestShopping@3fc79729]" started-at="2020-10-07T14:17:36Z" name="addinfo" description="Adding personal information" finished-at="2020-10-07T14:17:39Z" duration-ms="3487" status="PASS">
+        <test-method signature="addinfo()[pri:2, instance:test.TestShopping@59d4cd39]" started-at="2020-10-11T22:41:03Z" name="addinfo" description="Adding personal information" finished-at="2020-10-11T22:41:09Z" duration-ms="6079" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addinfo -->
-        <test-method signature="verifytotal()[pri:3, instance:test.TestShopping@3fc79729]" started-at="2020-10-07T14:17:39Z" name="verifytotal" description="Verifying total in cart" finished-at="2020-10-07T14:17:39Z" duration-ms="90" status="PASS">
+        <test-method signature="verifytotal()[pri:3, instance:test.TestShopping@59d4cd39]" started-at="2020-10-11T22:41:09Z" name="verifytotal" description="Verifying total in cart" finished-at="2020-10-11T22:41:09Z" duration-ms="70" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifytotal -->
-        <test-method signature="finishorder()[pri:4, instance:test.TestShopping@3fc79729]" started-at="2020-10-07T14:17:39Z" name="finishorder" description="Confirming the order" finished-at="2020-10-07T14:17:41Z" duration-ms="1877" status="PASS">
+        <test-method signature="finishorder()[pri:4, instance:test.TestShopping@59d4cd39]" started-at="2020-10-11T22:41:09Z" name="finishorder" description="Confirming the order" finished-at="2020-10-11T22:41:11Z" duration-ms="2167" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- finishorder -->

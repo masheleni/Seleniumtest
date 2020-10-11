@@ -10,7 +10,7 @@ import java.util.regex.*;
 public class Solution {
 
 	
-	static void miniMaxSum(int[] arr) {
+	static void miniMaxSum(int[] arr) {  //integer array
 		//Print min and max sums 
 		arr = sortArray(arr);
 		int minSum = minSum(arr);
