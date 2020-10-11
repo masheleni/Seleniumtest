@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 5 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods, 5 failed,   </span>
+                    <span class="method-stats">5 methods, 4 failed,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -100,11 +100,6 @@
                       <a href="#" panel-name="suite-MyArtifactSuite" class="show-methods failed suite-MyArtifactSuite"> (show)</a> <!-- show-methods failed suite-MyArtifactSuite -->
                     </span>
                     <div class="method-list-content failed suite-MyArtifactSuite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-MyArtifactSuite" title="test.TestShopping" class="method navigator-link" hash-for-method="Login">Login</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                       <span>
                         <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-MyArtifactSuite" title="test.TestShopping" class="method navigator-link" hash-for-method="addinfo">addinfo</a> <!-- method navigator-link -->
@@ -127,6 +122,20 @@
                       <br/>
                     </div> <!-- method-list-content failed suite-MyArtifactSuite -->
                   </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-MyArtifactSuite" class="hide-methods passed suite-MyArtifactSuite"> (hide)</a> <!-- hide-methods passed suite-MyArtifactSuite -->
+                      <a href="#" panel-name="suite-MyArtifactSuite" class="show-methods passed suite-MyArtifactSuite"> (show)</a> <!-- show-methods passed suite-MyArtifactSuite -->
+                    </span>
+                    <div class="method-list-content passed suite-MyArtifactSuite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyArtifactSuite" title="test.TestShopping" class="method navigator-link" hash-for-method="Login">Login</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-MyArtifactSuite -->
+                  </li>
                 </ul>
               </div> <!-- suite-section-content -->
             </div> <!-- result-section -->
@@ -145,50 +154,17 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="Login">
-                  </a> <!-- Login -->
-                  <span class="method-name">Login</span>
-                  <div class="stack-trace">org.openqa.selenium.WebDriverException: chrome not reachable
-  (Session info: chrome=86.0.4240.75)
-Build info: version: &apos;4.0.0-alpha-6&apos;, revision: &apos;5f43a29cfc&apos;
-System info: host: &apos;DESKTOP-5UV4F2D&apos;, ip: &apos;192.168.0.105&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.75, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\ARPITL~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51797}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 986af13c23b4f0e17f412121fcb00c21
-*** Element info: {Using=id, value=user-name}
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:196)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:129)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:582)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:333)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:381)
-	at org.openqa.selenium.By$ById.findElement(By.java:194)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:325)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at com.sun.proxy.$Proxy13.sendKeys(Unknown Source)
-	at main.Login.Loginintoswaglabs(Login.java:36)
-	at test.TestShopping.Login(TestShopping.java:61)
-... Removed 31 stack frames
-</div> <!-- stack-trace -->
-                  <em>
-(Adding login details)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="addinfo">
                   </a> <!-- addinfo -->
                   <span class="method-name">addinfo</span>
-                  <div class="stack-trace">org.openqa.selenium.WebDriverException: chrome not reachable
+                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
   (Session info: chrome=86.0.4240.75)
 Build info: version: &apos;4.0.0-alpha-6&apos;, revision: &apos;5f43a29cfc&apos;
 System info: host: &apos;DESKTOP-5UV4F2D&apos;, ip: &apos;192.168.0.105&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.75, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\ARPITL~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51797}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 986af13c23b4f0e17f412121fcb00c21
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.75, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\ARPITL~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51179}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 0c833646c010f0501bdf853d8459af01
 *** Element info: {Using=xpath, value=/html/body/div/div[2]/div[3]/div/div[2]/a[2]}
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:196)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:129)
@@ -204,7 +180,7 @@ Session ID: 986af13c23b4f0e17f412121fcb00c21
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
 	at com.sun.proxy.$Proxy13.click(Unknown Source)
 	at main.AddInfo.addinginfo(AddInfo.java:32)
-	at test.TestShopping.addinfo(TestShopping.java:91)
+	at test.TestShopping.addinfo(TestShopping.java:83)
 ... Removed 31 stack frames
 </div> <!-- stack-trace -->
                   <em>
@@ -216,13 +192,14 @@ Session ID: 986af13c23b4f0e17f412121fcb00c21
                   <a name="addproducts">
                   </a> <!-- addproducts -->
                   <span class="method-name">addproducts</span>
-                  <div class="stack-trace">org.openqa.selenium.WebDriverException: chrome not reachable
+                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
   (Session info: chrome=86.0.4240.75)
 Build info: version: &apos;4.0.0-alpha-6&apos;, revision: &apos;5f43a29cfc&apos;
 System info: host: &apos;DESKTOP-5UV4F2D&apos;, ip: &apos;192.168.0.105&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.75, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\ARPITL~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51797}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 986af13c23b4f0e17f412121fcb00c21
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.75, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\ARPITL~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51179}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 0c833646c010f0501bdf853d8459af01
 *** Element info: {Using=xpath, value=/html/body/div/div[2]/div[2]/div/div[2]/div/div[1]/div[3]/button}
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:196)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:129)
@@ -238,7 +215,7 @@ Session ID: 986af13c23b4f0e17f412121fcb00c21
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
 	at com.sun.proxy.$Proxy13.click(Unknown Source)
 	at main.AddProducts.addingproducts(AddProducts.java:29)
-	at test.TestShopping.addproducts(TestShopping.java:72)
+	at test.TestShopping.addproducts(TestShopping.java:64)
 ... Removed 31 stack frames
 </div> <!-- stack-trace -->
                   <em>
@@ -250,13 +227,14 @@ Session ID: 986af13c23b4f0e17f412121fcb00c21
                   <a name="finishorder">
                   </a> <!-- finishorder -->
                   <span class="method-name">finishorder</span>
-                  <div class="stack-trace">org.openqa.selenium.WebDriverException: chrome not reachable
+                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
   (Session info: chrome=86.0.4240.75)
 Build info: version: &apos;4.0.0-alpha-6&apos;, revision: &apos;5f43a29cfc&apos;
 System info: host: &apos;DESKTOP-5UV4F2D&apos;, ip: &apos;192.168.0.105&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.75, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\ARPITL~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51797}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 986af13c23b4f0e17f412121fcb00c21
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.75, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\ARPITL~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51179}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 0c833646c010f0501bdf853d8459af01
 *** Element info: {Using=xpath, value=/html/body/div/div[2]/div[3]/div/div[2]/div[8]/a[2]}
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:196)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:129)
@@ -269,7 +247,7 @@ Session ID: 986af13c23b4f0e17f412121fcb00c21
 	at org.openqa.selenium.By$ByXPath.findElement(By.java:394)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:325)
 	at main.FinishOrder.confirmorder(FinishOrder.java:19)
-	at test.TestShopping.finishorder(TestShopping.java:111)
+	at test.TestShopping.finishorder(TestShopping.java:103)
 ... Removed 31 stack frames
 </div> <!-- stack-trace -->
                   <em>
@@ -281,13 +259,14 @@ Session ID: 986af13c23b4f0e17f412121fcb00c21
                   <a name="verifytotal">
                   </a> <!-- verifytotal -->
                   <span class="method-name">verifytotal</span>
-                  <div class="stack-trace">org.openqa.selenium.WebDriverException: chrome not reachable
+                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
   (Session info: chrome=86.0.4240.75)
 Build info: version: &apos;4.0.0-alpha-6&apos;, revision: &apos;5f43a29cfc&apos;
 System info: host: &apos;DESKTOP-5UV4F2D&apos;, ip: &apos;192.168.0.105&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.75, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\ARPITL~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51797}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 986af13c23b4f0e17f412121fcb00c21
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.75, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\ARPITL~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51179}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 0c833646c010f0501bdf853d8459af01
 *** Element info: {Using=xpath, value=/html/body/div/div[2]/div[3]/div/div[1]/div[3]/div[2]/div[2]}
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:196)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:129)
@@ -300,7 +279,7 @@ Session ID: 986af13c23b4f0e17f412121fcb00c21
 	at org.openqa.selenium.By$ByXPath.findElements(By.java:389)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:320)
 	at main.VerifyShoppingCart.verifycart(VerifyShoppingCart.java:28)
-	at test.TestShopping.verifytotal(TestShopping.java:100)
+	at test.TestShopping.verifytotal(TestShopping.java:92)
 ... Removed 31 stack frames
 </div> <!-- stack-trace -->
                   <em>
@@ -309,6 +288,23 @@ Session ID: 986af13c23b4f0e17f412121fcb00c21
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-MyArtifactSuite-class-failed -->
+          <div class="suite-MyArtifactSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test.TestShopping</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Login">
+                  </a> <!-- Login -->
+                  <span class="method-name">Login</span>
+                  <em>
+(Adding login details)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-MyArtifactSuite-class-passed -->
         </div> <!-- panel MyArtifactSuite -->
         <div panel-name="test-xml-MyArtifactSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -365,28 +361,28 @@ data.addRows(5);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'Login')
 data.setCell(0, 2, 'test.TestShopping')
-data.setCell(0, 3, 14048);
+data.setCell(0, 3, 3466);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'addproducts')
 data.setCell(1, 2, 'test.TestShopping')
-data.setCell(1, 3, 12022);
+data.setCell(1, 3, 16);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'finishorder')
+data.setCell(2, 1, 'addinfo')
 data.setCell(2, 2, 'test.TestShopping')
-data.setCell(2, 3, 12021);
+data.setCell(2, 3, 8);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'verifytotal')
 data.setCell(3, 2, 'test.TestShopping')
-data.setCell(3, 3, 12019);
+data.setCell(3, 3, 6);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'addinfo')
+data.setCell(4, 1, 'finishorder')
 data.setCell(4, 2, 'test.TestShopping')
-data.setCell(4, 3, 12016);
+data.setCell(4, 3, 5);
 window.suiteTableData['MyArtifactSuite']= { tableData: data, tableDiv: 'times-div-MyArtifactSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 3 seconds</span>
               <div id="times-div-MyArtifactSuite">
               </div> <!-- times-div-MyArtifactSuite -->
             </div> <!-- times-div -->
@@ -418,34 +414,32 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">Login</span>
-                <span class="method-start">31455 ms</span>
+                <span class="method-start">9152 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">addproducts</span>
-                <span class="method-start">45508 ms</span>
+                <span class="method-start">12618 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">addinfo</span>
-                <span class="method-start">57531 ms</span>
+                <span class="method-start">12645 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">verifytotal</span>
-                <span class="method-start">69549 ms</span>
+                <span class="method-start">12656 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">finishorder</span>
-                <span class="method-start">81569 ms</span>
+                <span class="method-start">12664 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

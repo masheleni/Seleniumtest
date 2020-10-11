@@ -31,8 +31,8 @@ public class TestShopping {
 	{
 	
 		System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
-	
-		 driver = new ChromeDriver();
+		
+	driver = new ChromeDriver();
    driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
    driver.get("https://www.saucedemo.com/");
    driver.manage().window().maximize();
