@@ -41,7 +41,7 @@ public class TestShopping {
 	
 		
    driver = new ChromeDriver();
-   driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+   driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
    driver.get("https://www.saucedemo.com/");
    driver.manage().window().maximize();
    Thread.sleep(2000);
