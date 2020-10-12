@@ -4,6 +4,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -12,6 +13,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import main.AddInfo;
@@ -30,9 +32,13 @@ public class TestShopping {
 	public void setup() throws Exception 
 	{
 	
-		System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
 		
-	driver = new ChromeDriver();
+		DesiredCapabilities caps = new DesiredCapabilities();
+		caps.setCapability("ignoreProtectedModeSettings", true);
+
+		
+	System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
+   driver = new ChromeDriver();
    driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
    driver.get("https://www.saucedemo.com/");
    driver.manage().window().maximize();
@@ -105,9 +111,14 @@ public class TestShopping {
 		boolean ActualTitle1 = driver.getPageSource().contains("THANK YOU FOR YOUR ORDER");
         Assert.assertTrue(ActualTitle1, "Expected title not found");
         System.out.println("Assert Passed");
-
-		driver.quit();
-
 	}
+	
+	
+        @AfterTest
+        public void endSession()
+        {
+		driver.quit();
+        }
+	
 
 }

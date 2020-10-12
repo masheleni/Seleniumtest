@@ -5,6 +5,7 @@
     <classes>
       <class name="test.TestShopping">
         <methods>
+          <include name="endSession"/>
           <include name="addproducts"/>
           <include name="verifytotal"/>
           <include name="addinfo"/>
