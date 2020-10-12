@@ -16,25 +16,54 @@ import main.Login;
 import main.VerifyShoppingCart;
 
 
+//added this for remote hub selenuim
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
+import java.net.URL;
+import java.net.MalformedURLException;
+import org.testng.annotations.Parameters;
+import org.testng.annotations.BeforeClass;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.firefox.FirefoxOptions;
+
 public class TestShopping {
 	
 	WebDriver driver;
-	
+
+	@Parameters({"Port"})
 	@BeforeTest
-	public void setup() throws Exception 
-	{
+	public void setup(String Port) throws Exception {
+		
+		if (System.getProperty("os.name").startsWith("Windows")) {
+			if(Port.equalsIgnoreCase("9001")) {
+				System.out.println("Windows");
+				System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");	
+				driver = new ChromeDriver();
+			}
+		}
+		else {
+			if(Port.equalsIgnoreCase("9001"))
+			{
+				ChromeOptions options = new ChromeOptions();
+				driver = new RemoteWebDriver(new URL("http://hub:4444/wd/hub"), options);
+			}
+			else if(Port.equalsIgnoreCase("9002")){
+				FirefoxOptions options = new FirefoxOptions();
+				driver = new RemoteWebDriver(new URL("http://hub:4444/wd/hub"), options);
+			}
+		}
 
-		System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");	
-		driver = new ChromeDriver();
-	    driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-        driver.manage().window().maximize();
-        Thread.sleep(2000);
-        driver.get("https://www.saucedemo.com/");
-        Thread.sleep(2000);
-   
+		if (driver == null) {
+			System.out.println("DRIVER [NULL]");
+			return;
+		}
+		
+		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+		driver.manage().window().maximize();
+		Thread.sleep(2000);
+		driver.get("https://www.saucedemo.com/");
+		Thread.sleep(2000);
 	}
-
-	
 
 	@Test(priority=0, description = "Adding login details")
 	
