@@ -28,7 +28,6 @@ import org.openqa.selenium.MutableCapabilities;
 import org.openqa.selenium.Capabilities;
 
 
-
 public class TestShopping {
 	
 	RemoteWebDriver driver;
@@ -50,7 +49,7 @@ public class TestShopping {
 		 driver.get("https://www.saucedemo.com/");
 		driver.manage().window().maximize();
 		
-		  driver =(ChromeDriver) new RemoteWebDriver(new    URL("http://localhost:4444/wd/hub"), options);
+		 // driver =(ChromeDriver) new RemoteWebDriver(new    URL("http://localhost:4444/wd/hub"), options);
 		//driver.quit();
 	
 	
