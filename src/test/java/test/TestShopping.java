@@ -21,6 +21,10 @@ import main.AddProducts;
 import main.FinishOrder;
 import main.Login;
 import main.VerifyShoppingCart;
+import org.openqa.selenium.MutableCapabilities;
+import org.openqa.selenium.Capabilities;
+
+
 
 public class TestShopping {
 	
@@ -66,15 +70,14 @@ public class TestShopping {
 		WebDriver driver = new RemoteWebDriver(new URL(huburl), options);
 		
 		
-		
+		 driver.get("https://www.saucedemo.com/");
 		
 
 		
 	//System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
   // driver = new ChromeDriver();
    driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-   driver.get("https://www.saucedemo.com/");
-   driver.manage().window().maximize();
+    driver.manage().window().maximize();
    Thread.sleep(2000);
    
    
