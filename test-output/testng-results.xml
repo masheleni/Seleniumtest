@@ -2,20 +2,20 @@
 <testng-results total="5" passed="1" failed="4" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-10-12T11:18:30Z" name="Default suite" finished-at="2020-10-12T11:18:43Z" duration-ms="13303">
+  <suite started-at="2020-10-12T12:55:57Z" name="Default suite" finished-at="2020-10-12T12:56:13Z" duration-ms="16143">
     <groups>
     </groups>
-    <test started-at="2020-10-12T11:18:30Z" name="Default test" finished-at="2020-10-12T11:18:43Z" duration-ms="13303">
+    <test started-at="2020-10-12T12:55:57Z" name="Default test" finished-at="2020-10-12T12:56:13Z" duration-ms="16143">
       <class name="test.TestShopping">
-        <test-method is-config="true" signature="setup()[pri:0, instance:test.TestShopping@6cdba6dc]" started-at="2020-10-12T13:18:30Z" name="setup" finished-at="2020-10-12T13:18:39Z" duration-ms="9021" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:test.TestShopping@6cdba6dc]" started-at="2020-10-12T14:55:57Z" name="setup" finished-at="2020-10-12T14:56:09Z" duration-ms="11830" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="Login()[pri:0, instance:test.TestShopping@6cdba6dc]" started-at="2020-10-12T13:18:39Z" name="Login" description="Adding login details" finished-at="2020-10-12T13:18:43Z" duration-ms="3582" status="PASS">
+        <test-method signature="Login()[pri:0, instance:test.TestShopping@6cdba6dc]" started-at="2020-10-12T14:56:09Z" name="Login" description="Adding login details" finished-at="2020-10-12T14:56:13Z" duration-ms="3675" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method signature="addproducts()[pri:1, instance:test.TestShopping@6cdba6dc]" started-at="2020-10-12T13:18:43Z" name="addproducts" description="Adding product into cart" finished-at="2020-10-12T13:18:43Z" duration-ms="21" status="FAIL">
+        <test-method signature="addproducts()[pri:1, instance:test.TestShopping@6cdba6dc]" started-at="2020-10-12T14:56:13Z" name="addproducts" description="Adding product into cart" finished-at="2020-10-12T14:56:13Z" duration-ms="16" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchWindowException">
             <message>
               <![CDATA[no such window: target window already closed
@@ -24,8 +24,8 @@ from unknown error: web view not found
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
 System info: host: 'DESKTOP-5UV4F2D', ip: '192.168.0.105', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.75, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\ARPITL~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:49398}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 0f4e3bd44aebe2b1c41196fd6de926c1
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.75, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\ARPITL~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51802}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: f4915aaf471311d9acdb57c0acbb60c8
 *** Element info: {Using=xpath, value=/html/body/div/div[2]/div[2]/div/div[2]/div/div[1]/div[3]/button}]]>
             </message>
             <full-stacktrace>
@@ -35,8 +35,8 @@ from unknown error: web view not found
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
 System info: host: 'DESKTOP-5UV4F2D', ip: '192.168.0.105', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.75, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\ARPITL~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:49398}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 0f4e3bd44aebe2b1c41196fd6de926c1
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.75, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\ARPITL~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51802}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: f4915aaf471311d9acdb57c0acbb60c8
 *** Element info: {Using=xpath, value=/html/body/div/div[2]/div[2]/div/div[2]/div/div[1]/div[3]/button}
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -56,7 +56,7 @@ Session ID: 0f4e3bd44aebe2b1c41196fd6de926c1
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at com.sun.proxy.$Proxy12.click(Unknown Source)
 	at main.AddProducts.addingproducts(AddProducts.java:29)
-	at test.TestShopping.addproducts(TestShopping.java:111)
+	at test.TestShopping.addproducts(TestShopping.java:72)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -87,7 +87,7 @@ Session ID: 0f4e3bd44aebe2b1c41196fd6de926c1
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addproducts -->
-        <test-method signature="addinfo()[pri:2, instance:test.TestShopping@6cdba6dc]" started-at="2020-10-12T13:18:43Z" name="addinfo" description="Adding personal information" finished-at="2020-10-12T13:18:43Z" duration-ms="18" status="FAIL">
+        <test-method signature="addinfo()[pri:2, instance:test.TestShopping@6cdba6dc]" started-at="2020-10-12T14:56:13Z" name="addinfo" description="Adding personal information" finished-at="2020-10-12T14:56:13Z" duration-ms="6" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchWindowException">
             <message>
               <![CDATA[no such window: target window already closed
@@ -96,8 +96,8 @@ from unknown error: web view not found
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
 System info: host: 'DESKTOP-5UV4F2D', ip: '192.168.0.105', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.75, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\ARPITL~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:49398}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 0f4e3bd44aebe2b1c41196fd6de926c1
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.75, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\ARPITL~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51802}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: f4915aaf471311d9acdb57c0acbb60c8
 *** Element info: {Using=xpath, value=/html/body/div/div[2]/div[3]/div/div[2]/a[2]}]]>
             </message>
             <full-stacktrace>
@@ -107,8 +107,8 @@ from unknown error: web view not found
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
 System info: host: 'DESKTOP-5UV4F2D', ip: '192.168.0.105', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.75, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\ARPITL~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:49398}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 0f4e3bd44aebe2b1c41196fd6de926c1
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.75, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\ARPITL~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51802}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: f4915aaf471311d9acdb57c0acbb60c8
 *** Element info: {Using=xpath, value=/html/body/div/div[2]/div[3]/div/div[2]/a[2]}
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -128,7 +128,7 @@ Session ID: 0f4e3bd44aebe2b1c41196fd6de926c1
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at com.sun.proxy.$Proxy12.click(Unknown Source)
 	at main.AddInfo.addinginfo(AddInfo.java:32)
-	at test.TestShopping.addinfo(TestShopping.java:130)
+	at test.TestShopping.addinfo(TestShopping.java:91)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -159,7 +159,7 @@ Session ID: 0f4e3bd44aebe2b1c41196fd6de926c1
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addinfo -->
-        <test-method signature="verifytotal()[pri:3, instance:test.TestShopping@6cdba6dc]" started-at="2020-10-12T13:18:43Z" name="verifytotal" description="Verifying total in cart" finished-at="2020-10-12T13:18:43Z" duration-ms="7" status="FAIL">
+        <test-method signature="verifytotal()[pri:3, instance:test.TestShopping@6cdba6dc]" started-at="2020-10-12T14:56:13Z" name="verifytotal" description="Verifying total in cart" finished-at="2020-10-12T14:56:13Z" duration-ms="4" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchWindowException">
             <message>
               <![CDATA[no such window: target window already closed
@@ -168,8 +168,8 @@ from unknown error: web view not found
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
 System info: host: 'DESKTOP-5UV4F2D', ip: '192.168.0.105', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.75, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\ARPITL~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:49398}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 0f4e3bd44aebe2b1c41196fd6de926c1
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.75, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\ARPITL~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51802}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: f4915aaf471311d9acdb57c0acbb60c8
 *** Element info: {Using=xpath, value=/html/body/div/div[2]/div[3]/div/div[1]/div[3]/div[2]/div[2]}]]>
             </message>
             <full-stacktrace>
@@ -179,8 +179,8 @@ from unknown error: web view not found
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
 System info: host: 'DESKTOP-5UV4F2D', ip: '192.168.0.105', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.75, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\ARPITL~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:49398}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 0f4e3bd44aebe2b1c41196fd6de926c1
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.75, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\ARPITL~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51802}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: f4915aaf471311d9acdb57c0acbb60c8
 *** Element info: {Using=xpath, value=/html/body/div/div[2]/div[3]/div/div[1]/div[3]/div[2]/div[2]}
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -197,7 +197,7 @@ Session ID: 0f4e3bd44aebe2b1c41196fd6de926c1
 	at org.openqa.selenium.By$ByXPath.findElements(By.java:348)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:311)
 	at main.VerifyShoppingCart.verifycart(VerifyShoppingCart.java:28)
-	at test.TestShopping.verifytotal(TestShopping.java:139)
+	at test.TestShopping.verifytotal(TestShopping.java:100)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -228,7 +228,7 @@ Session ID: 0f4e3bd44aebe2b1c41196fd6de926c1
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifytotal -->
-        <test-method signature="finishorder()[pri:4, instance:test.TestShopping@6cdba6dc]" started-at="2020-10-12T13:18:43Z" name="finishorder" description="Confirming the order" finished-at="2020-10-12T13:18:43Z" duration-ms="8" status="FAIL">
+        <test-method signature="finishorder()[pri:4, instance:test.TestShopping@6cdba6dc]" started-at="2020-10-12T14:56:13Z" name="finishorder" description="Confirming the order" finished-at="2020-10-12T14:56:13Z" duration-ms="6" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchWindowException">
             <message>
               <![CDATA[no such window: target window already closed
@@ -237,8 +237,8 @@ from unknown error: web view not found
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
 System info: host: 'DESKTOP-5UV4F2D', ip: '192.168.0.105', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.75, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\ARPITL~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:49398}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 0f4e3bd44aebe2b1c41196fd6de926c1
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.75, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\ARPITL~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51802}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: f4915aaf471311d9acdb57c0acbb60c8
 *** Element info: {Using=xpath, value=/html/body/div/div[2]/div[3]/div/div[2]/div[8]/a[2]}]]>
             </message>
             <full-stacktrace>
@@ -248,8 +248,8 @@ from unknown error: web view not found
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
 System info: host: 'DESKTOP-5UV4F2D', ip: '192.168.0.105', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.75, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\ARPITL~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:49398}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 0f4e3bd44aebe2b1c41196fd6de926c1
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.75, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\ARPITL~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51802}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: f4915aaf471311d9acdb57c0acbb60c8
 *** Element info: {Using=xpath, value=/html/body/div/div[2]/div[3]/div/div[2]/div[8]/a[2]}
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -266,7 +266,7 @@ Session ID: 0f4e3bd44aebe2b1c41196fd6de926c1
 	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
 	at main.FinishOrder.confirmorder(FinishOrder.java:19)
-	at test.TestShopping.finishorder(TestShopping.java:150)
+	at test.TestShopping.finishorder(TestShopping.java:111)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -297,7 +297,7 @@ Session ID: 0f4e3bd44aebe2b1c41196fd6de926c1
           <reporter-output>
           </reporter-output>
         </test-method> <!-- finishorder -->
-        <test-method is-config="true" signature="endSession()[pri:0, instance:test.TestShopping@6cdba6dc]" started-at="2020-10-12T13:18:43Z" name="endSession" finished-at="2020-10-12T13:18:43Z" duration-ms="612" status="PASS">
+        <test-method is-config="true" signature="endSession()[pri:0, instance:test.TestShopping@6cdba6dc]" started-at="2020-10-12T14:56:13Z" name="endSession" finished-at="2020-10-12T14:56:13Z" duration-ms="588" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endSession -->

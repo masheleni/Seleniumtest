@@ -1,19 +1,9 @@
 package test;
 
-import java.net.MalformedURLException;
-import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
-import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.devtools.page.Page;
-import org.openqa.selenium.remote.BrowserType;
-import org.openqa.selenium.remote.CapabilityType;
-import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.remote.RemoteWebDriver;
-import org.openqa.selenium.server.browserlaunchers.BrowserOptions;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
@@ -24,52 +14,25 @@ import main.AddProducts;
 import main.FinishOrder;
 import main.Login;
 import main.VerifyShoppingCart;
-import org.openqa.selenium.MutableCapabilities;
-import org.openqa.selenium.Capabilities;
 
 
 public class TestShopping {
 	
-	RemoteWebDriver driver;
+	WebDriver driver;
 	
-	
-
 	@BeforeTest
 	public void setup() throws Exception 
 	{
-	
-		
-		System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");	
-		ChromeOptions options = new ChromeOptions();
-		DesiredCapabilities capabilities = new DesiredCapabilities();
-		capabilities.setCapability(ChromeOptions.CAPABILITY, options);
-		options.merge(capabilities);
-		ChromeDriver driver = new ChromeDriver(options);
-		
-		 driver.get("https://www.saucedemo.com/");
-		driver.manage().window().maximize();
-		
-		 // driver =(ChromeDriver) new RemoteWebDriver(new    URL("http://localhost:4444/wd/hub"), options);
-		//driver.quit();
-	
-	
-	 
-        }
-             
-       
-	
-	
 
-		
-	/*System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
-   driver = new ChromeDriver();
-  
-   driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-   driver.get("https://www.saucedemo.com/");
-   driver.manage().window().maximize();
-   Thread.sleep(2000);*/
+		System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");	
+		driver = new ChromeDriver();
+	    driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+        driver.manage().window().maximize();
+        Thread.sleep(2000);
+        driver.get("https://www.saucedemo.com/");
+        Thread.sleep(2000);
    
-   
+	}
 
 	
 
