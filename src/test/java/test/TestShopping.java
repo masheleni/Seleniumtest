@@ -9,6 +9,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.devtools.page.Page;
+import org.openqa.selenium.remote.BrowserType;
+import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.PageFactory;
@@ -58,9 +60,10 @@ public class TestShopping {
 				// Create driver with hub address and capability
 				WebDriver driver=new RemoteWebDriver(new URL(huburl), options);*/
 		
-		DesiredCapabilities cap = new DesiredCapabilities();
-		cap.setBrowserName("chrome");
-		cap.setPlatform(Platform.WINDOWS);
+		//DesiredCapabilities cap = new DesiredCapabilities();
+		  MutableCapabilities cap = new MutableCapabilities();
+		  cap.setCapability(CapabilityType.BROWSER_NAME, BrowserType.CHROME);
+		  cap.setCapability(CapabilityType.PLATFORM_NAME, Platform.WINDOWS);
 	
 		ChromeOptions options = new ChromeOptions();
 		options.merge(cap);
