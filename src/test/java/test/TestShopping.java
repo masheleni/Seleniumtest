@@ -33,9 +33,27 @@ public class TestShopping {
 	{
 	
 		
-		DesiredCapabilities caps = new DesiredCapabilities();
-		caps.setCapability("ignoreProtectedModeSettings", true);
+	//	DesiredCapabilities caps = new DesiredCapabilities();
+		//caps.setCapability("ignoreProtectedModeSettings", true);
 
+		
+		
+		//Define desired capabilities
+				DesiredCapabilities cap=new DesiredCapabilities();
+				cap.setBrowserName("chrome");
+				cap.setPlatform(Platform.WINDOWS);
+				
+				//Chrome option  
+				ChromeOptions options = new ChromeOptions();
+				options.merge(cap);
+				options.setHeadless(true);
+				
+				//Hub URL
+				String huburl ="http://172.18.132.145:4444/wd/hub";
+				 
+				// Create driver with hub address and capability
+				WebDriver driver=new RemoteWebDriver(new URL(huburl), options);
+				 
 		
 	System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
    driver = new ChromeDriver();
